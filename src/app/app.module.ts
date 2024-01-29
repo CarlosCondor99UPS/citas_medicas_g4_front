@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CitaComponent } from './pages/cita/cita.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MedicoComponent } from './pages/medico/medico.component';
-import { ServicesComponent } from './pages/services/services.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { CitaComponent } from './pages/cita/cita.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CrearServicioComponent } from './pages/crear-servicio/crear-servicio.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { RegisterComponent } from './pages/register/register.component';
     CitaComponent,
     LoginComponent,
     MedicoComponent,
-    ServicesComponent,
-    RegisterComponent
+    RegisterComponent,
+    CrearServicioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
