@@ -10,6 +10,7 @@ import { CitaComponent } from './pages/cita/cita.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CrearServicioComponent } from './pages/crear-servicio/crear-servicio.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CrearServicioComponent } from './pages/crear-servicio/crear-servicio.co
     LoginComponent,
     MedicoComponent,
     RegisterComponent,
-    CrearServicioComponent
+    CrearServicioComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
