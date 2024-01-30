@@ -1,0 +1,40 @@
+<div class="container_background">
+
+    <div class="container container_main">
+
+        
+
+        <br><br>
+        <br>
+
+
+        <div class="row row-cols-4 row-cols-md-4 g-4">
+
+            <div class="col container_cards" *ngFor="let servicio of servicios">
+
+                <div class="card" style="width: 75rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{servicio.nombreServicio}}</h5>
+                        <br>
+                        <div class="container_servicios_stock">
+
+                            <p class="card-text-precio"> {{servicio.precio}}</p>
+                            <p class="card-text-cantidad"> {{servicio.cantidad}}</p>
+                            <p class="card-text-estado"> {{servicio.estado}}</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container_textos">
+            <a _ngcontent-ng-c936632262="" href="crearServicio" class="btn btn-primary">Crear Servicio</a>
+        </div>
+    </div>
+    
+
+</div>
+
+
+<app-about></app-about>
