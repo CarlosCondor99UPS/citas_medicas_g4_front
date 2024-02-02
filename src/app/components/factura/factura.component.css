@@ -1,0 +1,47 @@
+.container_registro {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    width: 600px;
+  }
+  
+  .form_register {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    background-color: #ece569;
+  }
+  
+  .button-container button {
+    width: 100%;
+    background-color: #ece569;
+  }
+  
+ 
+
+
+  .container_login_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.container_listado {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-container {
+    width: 48%;
+}

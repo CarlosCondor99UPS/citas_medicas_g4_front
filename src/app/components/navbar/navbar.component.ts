@@ -7,6 +7,6 @@ import { Subject } from 'rxjs';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
+ 
 
 }

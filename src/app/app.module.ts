@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +17,8 @@ import { EspecialidadComponent } from './components/especialidad/especialidad.co
 import { ListarMedicosComponent } from './components/listar-medicos/listar-medicos.component';
 import { ListarEspecialidadComponent } from './components/listar-especialidad/listar-especialidad.component';
 import { ListarCitasComponent } from './components/listar-citas/listar-citas.component';
+import { FacturaComponent } from './components/factura/factura.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { ListarCitasComponent } from './components/listar-citas/listar-citas.com
     EspecialidadComponent,
     ListarMedicosComponent,
     ListarEspecialidadComponent,
-    ListarCitasComponent
+    ListarCitasComponent,
+    FacturaComponent
   ],
   imports: [
     BrowserModule,

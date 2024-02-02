@@ -11,6 +11,7 @@ import { ListarMedicosComponent } from './components/listar-medicos/listar-medic
 import { ListarEspecialidadComponent } from './components/listar-especialidad/listar-especialidad.component';
 import { CitaComponent } from './components/cita/cita.component';
 import { ListarCitasComponent } from './components/listar-citas/listar-citas.component';
+import { FacturaComponent } from './components/factura/factura.component';
 
 const routes: Routes = [
   {path: "", redirectTo:"main", pathMatch:"full"},
@@ -26,6 +27,10 @@ const routes: Routes = [
   {path: "listarEspecialidad", component: ListarEspecialidadComponent},
   {path: "crearCita", component: CitaComponent},
   {path: "listarCita", component: ListarCitasComponent},
+  {path: "factura", component: FacturaComponent},
+
+  
+
 ];
 
 @NgModule({
