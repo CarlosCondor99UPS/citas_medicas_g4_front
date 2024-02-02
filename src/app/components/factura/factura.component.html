@@ -67,3 +67,29 @@
       </table>
     </div>
   </div>
+  <div class="container table-container">
+    <h4>Listado de Facturas</h4>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Cabecera Factura ID</th>
+          <th>Fecha</th>
+          <th>Subtotal</th>
+          <th>Total IVA</th>
+          <th>Total Factura</th>
+          <!-- Agrega aquí otros campos de la factura según sea necesario -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let factura of facturas">
+          <td>{{ factura.cabeceraFactura_id }}</td>
+          <td>{{ factura.fecha }}</td>
+          <td>{{ factura.subtotal }}</td>
+          <td>{{ factura.totalIva }}</td>
+          <td>{{ factura.totalFactura }}</td>
+          <!-- Agrega aquí otros campos de la factura según sea necesario -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

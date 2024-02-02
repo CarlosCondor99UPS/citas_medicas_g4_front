@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ServicioLoginService } from 'src/app/services/servicio-login.service';
-import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
   selector: 'app-login',
@@ -17,16 +16,19 @@ export class LoginComponent {
 
   constructor(private servicioLogin: ServicioLoginService, private router: Router) { }
 
-
-  form_login(){
-
+  form_login() {
     this.servicioLogin.login(this.usuario).subscribe(
-      (data) => {
-        console.log(data);  
-      },(error) => {  
+      (data: any) => {
+        console.log(data);
+
+        // Verificar si el mensaje es "Inicio de sesión exitoso"
+        if (data.message === "Inicio de sesión exitoso") {
+          // Redirigir al usuario a la página "main"
+          this.router.navigate(['/main']);
+        }
+
+      }, (error) => {
         console.log(error);
-      })
-
+      });
   }
-
 }

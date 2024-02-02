@@ -11,6 +11,7 @@ import { ServiciosService } from 'src/app/services/servicios.service';
 export class FacturaComponent {
   public servicio: any[] = [];
   public personas: any[] = [];
+  public facturas: any[] = [];
 
   public factura = {
     personaId: 0,
@@ -27,6 +28,7 @@ export class FacturaComponent {
   ngOnInit(){
     this.obtenerClientes();
     this.obtenerServicios();
+    this.obtenerFacturas();
   }
 
   obtenerServicios() {
@@ -69,6 +71,18 @@ form_register() {
     (error: any) => {
       console.error('Error al registrar factura', error);
       this.enviandoFactura = false;
+    }
+  );
+}
+
+obtenerFacturas() {
+  this.facturaService.obtenerFacturas().subscribe(
+    (res: any[]) => {
+      this.facturas = res;
+      console.log(res);
+    },
+    (error: any) => {
+      console.error('Error al obtener facturas', error);
     }
   );
 }
